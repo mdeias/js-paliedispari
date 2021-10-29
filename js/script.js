@@ -5,20 +5,24 @@
 // Creare una funzione per capire se la parola inserita è palindroma
 
 // chiedo una parola all'utente 
-// let parolaUtente = prompt("inserisci una parola");
-// creo variabile che di default non è palindroma
-// let palidroma = "questa parola non è palidroma";
-// creo una condizione che le confronta
-// if (confrontaParola(parolaUtente) === parolaUtente) {
-//     palidroma = "questa parola è palidroma"
-// }
+let parolaUtente = prompt("inserisci una parola");
 
-// console.log("palindroma");
+// creo variabile che di default non è palindroma
+let esito = "questa parola non è palidroma";
+
+// creo una condizione che le confronta
+if (reverseWords(parolaUtente) === parolaUtente) {
+    esito = "questa parola è palidroma"
+}
+
+console.log(esito);
+
 // creo o cerco una funzione da applicare come condizione 
 
-
-
-
+function reverseWords(parola) {
+    let reverseWordArr = parola.split(" ").map(word => word.split("").reverse().join(""));
+    return reverseWordArr.join("");
+}
 
 
 
