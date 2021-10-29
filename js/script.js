@@ -5,9 +5,15 @@
 // Creare una funzione per capire se la parola inserita è palindroma
 
 // chiedo una parola all'utente 
-// creo variabile che di default non è polindroma
+let parolaUtente = prompt("inserisci una parola");
+// creo variabile che di default non è palindroma
+let palidroma = "questa parola non è palidroma";
 // creo una condizione che le confronta
+if (confrontaParola(parolaPc) === parolaUtente) {
+    palidroma = "questa parola è palidroma"
+}
 // creo o cerco una funzione da applicare come condizione 
+
 
 
 
